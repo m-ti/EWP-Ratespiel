@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hausaufgabe 17</title>
+	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="my.css">
+</head>
+<body>
+
+	<div class="jumbotron">
+		<div class="container">
+			<h2>Ratespiel</h2>
+			<ul>
+				<li>Spiel über <span class="glyphicon glyphicon-play"></span>  Start beginnen.</li>
+				<li>Es wird eine Zahl zwischen 0 und 100 generiert.</li>
+				<li>Du hast 7 Versuche, um die Zahl zu erraten.</li>
+				<li>Gib dazu deine Zahl in das Textfeld ein...</li>
+				<li>... und prüfe über  <span class="glyphicon glyphicon-refresh"></span>  Check ob du richtig liegst.</li>
+			</ul>
+		</div>
+	</div>
+	<div class="container">			
+		<div class="col-md-8 col-xs-12">	
+			<div class="input-group">
+				<span class="input-group-btn">
+					<button type="button" id="btn-start" class="btn btn-default">
+						<span class="glyphicon glyphicon-play"></span>  Start
+					</button>
+				</span>
+				<input id="user-input" class="form-control" placeholder="Zahl zwischen 0 und 100 raten!">
+				<span class="input-group-btn">
+					<button type="button" id="btn-check" class="btn btn-info">
+						<span class="glyphicon glyphicon-refresh"></span>  Check
+					</button>
+				</span>
+			</div>			
+			<div id="versuche"> </div>			
+		</div>
+		<div class="col-md-4 col-xs-12">
+			<ul class="list-group" id="try-list">
+			</ul>
+		</div>		
+	</div>
+	
+	<script src="https://code.jquery.com/jquery.min.js"></script>
+	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="ratespiel.js"></script>
+
+</body>
+</html>
